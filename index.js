@@ -3,6 +3,7 @@ const app = express();
 const ytdl = require("ytdl-core");
 
 app.set("view engine", "ejs");
+app.set('views', './views')
 
 app.get("/", async (req, res) => {
 	return res.render("index");
