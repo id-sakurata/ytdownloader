@@ -6,7 +6,7 @@ app.set("view engine", "ejs");
 app.set('views', './views')
 
 app.get("/", async (req, res) => {
-	return res.render("index");
+	return res.json({"dir": __dirname});
 });
 
 app.get("/download", async(req, res) => {
