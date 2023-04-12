@@ -4,7 +4,7 @@ const ytdl = require("ytdl-core");
 
 app.set("view engine", "ejs");
 
-app.get("/", (req, res) => {
+app.get("/", async (req, res) => {
 	return res.render("index");
 });
 
